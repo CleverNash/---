@@ -1,0 +1,125 @@
+/* Сброс и базовые стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-image: url(фото/фон.png);
+  color: #222;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+.culture_photo{
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2e7d32; /* темно-зеленый */
+  margin-bottom: 1rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+#culture_photo{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+nav button {
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav button:hover {
+  background-color: #2e7d32;
+  color: white;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.intro, .card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;/* обрезает всё, что выходит за границы */
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #2e7d32;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+a.btn:hover {
+  background-color: #256428;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  nav button {
+    padding: 0.4rem 0.8rem;
+  }
+
+  a.btn {
+    padding: 0.4rem 0.8rem;
+  }
+}
